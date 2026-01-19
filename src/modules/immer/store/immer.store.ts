@@ -42,13 +42,13 @@ export const useImmerStore = create<ImmerState>()(
 
     addTask: (title: string) =>
       set((state) => {
-        const newId = state.tasks.length > 0 ? Math.max(...state.tasks.map((t) => t.id)) + 1 : 1
+        const newId = state.tasks.length > 0 ? Math.max(...state.tasks.map((t: any) => t.id)) + 1 : 1
         state.tasks.push({ id: newId, title, completed: false })
       }),
 
     toggleTask: (id: number) =>
       set((state) => {
-        const task = state.tasks.find((t) => t.id === id)
+        const task = state.tasks.find((t: any) => t.id === id)
         if (task) {
           task.completed = !task.completed
         }
@@ -56,7 +56,7 @@ export const useImmerStore = create<ImmerState>()(
 
     removeTask: (id: number) =>
       set((state) => {
-        const index = state.tasks.findIndex((t) => t.id === id)
+        const index = state.tasks.findIndex((t: any) => t.id === id)
         if (index !== -1) {
           state.tasks.splice(index, 1)
         }
@@ -147,7 +147,7 @@ export const useWithoutImmerStore = create<WithoutImmerState>((set) => ({
 
   addTask: (title: string) =>
     set((state) => {
-      const newId = state.tasks.length > 0 ? Math.max(...state.tasks.map((t) => t.id)) + 1 : 1
+      const newId = state.tasks.length > 0 ? Math.max(...state.tasks.map((t: any) => t.id)) + 1 : 1
       return {
         tasks: [...state.tasks, { id: newId, title, completed: false }],
       }

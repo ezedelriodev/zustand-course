@@ -100,8 +100,8 @@ export const resetTimerOutside = () => {
 // Suscribirse a cambios específicos del estado
 export const subscribeToCounter = (callback: (count: number) => void) => {
   return useStateOutStore.subscribe(
-    (state) => state.count,
-    (count) => callback(count)
+    (state) => {callback(state.count)},
+    
   )
 }
 
