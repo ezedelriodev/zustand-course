@@ -22,7 +22,7 @@ export const Header = () => {
       </button>
       <div className="header-title">
         <h1>Curso Zustand</h1>
-        <img src="/zustand.ico" alt="Zustand" className="header-logo" />
+        <img src="./zustand.ico" alt="Zustand" className="header-logo" />
       </div>
     </header>
   )
