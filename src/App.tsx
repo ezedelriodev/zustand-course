@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, BrowserRouter } from 'react-router-dom'
 import { Layout } from './layout/Layout'
 import { QuickStartView } from './modules/quick-start'
 import { SelectorsView } from './modules/selectors'
@@ -14,7 +14,7 @@ import { StateCreatorView } from './modules/state-creator'
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/zustand-course">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/quick-start" replace />} />
@@ -31,6 +31,6 @@ export default function App() {
           <Route path="state-creator" element={<StateCreatorView />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
