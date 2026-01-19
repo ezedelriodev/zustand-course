@@ -1,0 +1,91 @@
+.settings-slice-demo {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.settings-slice-demo__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.settings-slice-demo__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.settings-slice-demo__setting {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.settings-slice-demo__setting label {
+  font-size: 0.9rem;
+  color: #a78bfa;
+  font-weight: 500;
+}
+
+.settings-slice-demo__toggle-btn {
+  padding: 0.625rem 1rem;
+  background-color: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.settings-slice-demo__toggle-btn:hover {
+  background-color: rgba(167, 139, 250, 0.2);
+  border-color: #a78bfa;
+}
+
+.settings-slice-demo__language-btns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.settings-slice-demo__lang-btn {
+  flex: 1;
+  padding: 0.625rem 1rem;
+  background-color: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.settings-slice-demo__lang-btn:hover {
+  background-color: rgba(167, 139, 250, 0.2);
+  border-color: #a78bfa;
+}
+
+.settings-slice-demo__lang-btn.active {
+  background-color: #a78bfa;
+  border-color: #a78bfa;
+}
+
+.settings-slice-demo__reset-btn {
+  padding: 0.625rem 1rem;
+  background-color: #a78bfa;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.settings-slice-demo__reset-btn:hover {
+  background-color: #8b5cf6;
+}

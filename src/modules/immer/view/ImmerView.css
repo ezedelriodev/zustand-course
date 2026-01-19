@@ -1,0 +1,159 @@
+.immer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.immer__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.immer__layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  height: 82%;
+}
+
+.immer__main-wrapper {
+  flex: 1;
+  min-width: 0;
+  height: 75vh;
+  padding-right: 1rem;
+  transition: margin-left 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.immer__main-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.immer__main-wrapper::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.immer__main-wrapper::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+.immer__main-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
+
+.immer__sidebar {
+  width: 400px;
+  flex-shrink: 0;
+  position: sticky;
+  height: 75vh;
+  top: 2rem;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.immer__sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.immer__sidebar::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.immer__sidebar::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+.immer__sidebar::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
+
+.immer__section {
+  margin-bottom: 3rem;
+}
+
+.immer__section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.immer__section p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.immer__section code {
+  background-color: #2a2a2a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #a78bfa;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.immer__section ul {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.immer__section li {
+  margin-bottom: 0.5rem;
+}
+
+.immer__section strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.immer__code-block {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.immer__code-block pre {
+  margin: 0;
+}
+
+.immer__code-block code {
+  background: none;
+  padding: 0;
+  color: #e5e7eb;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+@media (max-width: 1200px) {
+  .immer__layout {
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .immer__main-wrapper {
+    overflow-y: visible;
+  }
+
+  .immer__sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+  }
+}

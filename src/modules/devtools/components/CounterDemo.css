@@ -1,0 +1,81 @@
+.devtools-counter {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.devtools-counter__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.devtools-counter__display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgba(167, 139, 250, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.devtools-counter__label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+}
+
+.devtools-counter__value {
+  color: #a78bfa;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.devtools-counter__actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.devtools-counter__button {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.devtools-counter__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.devtools-counter__button:active {
+  transform: translateY(0);
+}
+
+.devtools-counter__hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.devtools-counter__hint code {
+  background-color: #2a2a2a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #a78bfa;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+}

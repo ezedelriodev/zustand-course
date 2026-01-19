@@ -1,0 +1,170 @@
+.devtools-todo-list {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.devtools-todo-list__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.devtools-todo-list__input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.devtools-todo-list__input {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.devtools-todo-list__input:focus {
+  outline: none;
+  border-color: #a78bfa;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.devtools-todo-list__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.devtools-todo-list__add-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.devtools-todo-list__add-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.devtools-todo-list__add-button:active {
+  transform: translateY(0);
+}
+
+.devtools-todo-list__items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.devtools-todo-list__items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.devtools-todo-list__items::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.devtools-todo-list__items::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 3px;
+}
+
+.devtools-todo-list__empty {
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
+.devtools-todo-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background-color: rgba(167, 139, 250, 0.1);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.devtools-todo-list__item:hover {
+  background-color: rgba(167, 139, 250, 0.15);
+}
+
+.devtools-todo-list__item-text {
+  color: rgba(255, 255, 255, 0.9);
+  flex: 1;
+}
+
+.devtools-todo-list__remove-button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(239, 68, 68, 0.8);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.devtools-todo-list__remove-button:hover {
+  background-color: rgba(239, 68, 68, 1);
+}
+
+.devtools-todo-list__reset-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  margin-bottom: 1rem;
+}
+
+.devtools-todo-list__reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.devtools-todo-list__reset-button:active {
+  transform: translateY(0);
+}
+
+.devtools-todo-list__hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.devtools-todo-list__hint code {
+  background-color: #2a2a2a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #a78bfa;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+}

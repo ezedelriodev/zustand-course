@@ -1,0 +1,66 @@
+.devtools-user-form {
+  background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.devtools-user-form__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.devtools-user-form__field {
+  margin-bottom: 1rem;
+}
+
+.devtools-user-form__label {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.devtools-user-form__input {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s,
+    background-color 0.2s;
+}
+
+.devtools-user-form__input:focus {
+  outline: none;
+  border-color: #a78bfa;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.devtools-user-form__input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.devtools-user-form__hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+.devtools-user-form__hint code {
+  background-color: #2a2a2a;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  color: #a78bfa;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+}

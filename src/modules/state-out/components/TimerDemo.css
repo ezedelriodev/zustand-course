@@ -1,0 +1,93 @@
+.timer-demo {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.timer-demo__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.timer-demo__display {
+  background-color: rgba(167, 139, 250, 0.1);
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.timer-demo__time {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #a78bfa;
+  font-family: 'Courier New', monospace;
+  margin-bottom: 0.5rem;
+}
+
+.timer-demo__status {
+  display: block;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.timer-demo__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.timer-demo__button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.timer-demo__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer-demo__button--start {
+  background-color: #22c55e;
+  color: #fff;
+}
+
+.timer-demo__button--start:hover:not(:disabled) {
+  background-color: #16a34a;
+}
+
+.timer-demo__button--stop {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.timer-demo__button--stop:hover:not(:disabled) {
+  background-color: #d97706;
+}
+
+.timer-demo__button--reset {
+  background-color: #a78bfa;
+  color: #fff;
+}
+
+.timer-demo__button--reset:hover {
+  background-color: #8b5cf6;
+}
+
+.timer-demo__note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-style: italic;
+}

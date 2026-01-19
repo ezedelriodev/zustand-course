@@ -1,0 +1,111 @@
+.settings-panel {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.settings-panel__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.settings-panel__badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.settings-panel__badge {
+  display: inline-block;
+  background-color: rgba(167, 139, 250, 0.2);
+  color: #a78bfa;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.settings-panel__setting {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.settings-panel__setting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.settings-panel__setting-label {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.settings-panel__setting-value {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.settings-panel__button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #a78bfa;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.settings-panel__button:hover {
+  background-color: #9370db;
+  transform: translateY(-1px);
+}
+
+.settings-panel__button--secondary {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  margin-top: 0.5rem;
+}
+
+.settings-panel__button--secondary:hover {
+  background-color: rgba(239, 68, 68, 0.3);
+  transform: translateY(-1px);
+}
+
+.settings-panel__select {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.settings-panel__select:focus {
+  outline: none;
+  border-color: #a78bfa;
+}
+
+.settings-panel__note {
+  background-color: rgba(167, 139, 250, 0.1);
+  border-left: 3px solid #a78bfa;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}

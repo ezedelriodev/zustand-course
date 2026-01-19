@@ -1,0 +1,115 @@
+.temperature-sync-demo {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.temperature-sync-demo__title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.temperature-sync-demo__description {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.temperature-sync-demo__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.temperature-sync-demo__control {
+  width: 100%;
+}
+
+.temperature-sync-demo__control label {
+  display: block;
+  font-size: 0.9rem;
+  color: #a78bfa;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.temperature-sync-demo__input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.temperature-sync-demo__input {
+  flex: 1;
+  padding: 0.625rem;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.temperature-sync-demo__input:focus {
+  outline: none;
+  border-color: #a78bfa;
+}
+
+.temperature-sync-demo__unit {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  min-width: 30px;
+}
+
+.temperature-sync-demo__slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(167, 139, 250, 0.2);
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.temperature-sync-demo__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #a78bfa;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.temperature-sync-demo__slider::-webkit-slider-thumb:hover {
+  background: #8b5cf6;
+}
+
+.temperature-sync-demo__slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #a78bfa;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.temperature-sync-demo__slider::-moz-range-thumb:hover {
+  background: #8b5cf6;
+}
+
+.temperature-sync-demo__arrow {
+  font-size: 1.5rem;
+  color: #a78bfa;
+  text-align: center;
+  transform: rotate(90deg);
+}

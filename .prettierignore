@@ -1,0 +1,15 @@
+# Dependencias
+node_modules
+dist
+build
+
+# Archivos de configuración
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos generados
+*.log
+.DS_Store
+coverage
+.vite
