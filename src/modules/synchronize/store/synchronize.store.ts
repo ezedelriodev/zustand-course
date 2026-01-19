@@ -86,7 +86,7 @@ export const useTotalStore = create<TotalStoreState>((set) => ({
 // Theme ↔ Preferences (usando subscripciones)
 // ============================================
 
-export const useThemeStore = create<ThemeStoreState>((set, get) => ({
+export const useThemeStore = create<ThemeStoreState>((set) => ({
   isDark: INITIAL_IS_DARK,
   toggleTheme: () => {
     set((state) => ({ isDark: !state.isDark }))
