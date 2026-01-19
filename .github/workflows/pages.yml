@@ -24,9 +24,8 @@ jobs:
 
       - name: Configurar autenticación npm
         run: |
-          run: |
-            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-            npm set always-auth true
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+          npm set always-auth true
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -50,4 +49,4 @@ jobs:
 
     steps:
       - name: Deploy to GitHub Pages
-          uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v1
